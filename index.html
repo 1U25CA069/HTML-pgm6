@@ -2,13 +2,62 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ordered and Unordered List</title>
+<title>CSS3 Column Features</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+    column-span: all;
+}
+
+.columns {
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 3px solid gray;
+    text-align: justify;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+</style>
 </head>
 
 <body>
 
-/* Write your HTML code to a page with ordered list and unordered list */
+<h1>CSS3 Multi-Column Layout</h1>
+
+<div class="columns">
+    <p>
+        CSS3 provides multi-column layout features that allow content
+        to be displayed in multiple columns, similar to newspapers and
+        magazines. It improves readability and uses space efficiently.
+    </p>
+
+    <p>
+        The <strong>column-count</strong> property specifies the number
+        of columns. The <strong>column-gap</strong> property defines the
+        space between columns, while the
+        <strong>column-rule</strong> property adds a line between them.
+    </p>
+
+    <p>
+        Multi-column layouts are useful for articles, blogs, magazines,
+        and reports. They provide an attractive presentation of long text.
+    </p>
+
+    <p>
+        CSS3 column properties make web pages responsive and easier to
+        maintain, enhancing the overall user experience.
+    </p>
+</div>
 
 </body>
 </html>
